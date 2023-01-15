@@ -37,7 +37,7 @@ def rotateImage1():
     img = ImageTk.PhotoImage(im.rotate(-90))
     label_image["image"] = img
     print(img_path)
-    img.destroy()
+    img.close()
     
 def rotateImage2():
     global img_path
